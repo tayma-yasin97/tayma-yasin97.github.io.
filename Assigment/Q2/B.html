@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+
+        <script>
+          function MNumber(nums) {
+    const n = nums.length;
+    let Sum = n * (n + 1) / 2;
+    let arraySum = nums.reduce((acc, val) => acc + val, 0);
+    return Sum - arraySum;
+}
+
+
+const nums = [9,7,6,5,4,3,2,1, 0, 1];
+console.log(MNumber(nums)); 
+</script>
+    </body>
+</html>

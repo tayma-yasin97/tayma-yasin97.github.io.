@@ -1,0 +1,221 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+   
+    
+   
+    
+}
+
+#seeMoreToggle:checked ~ .hidden-content {
+    display: block ; 
+}
+.container {
+    border: 2px solid  #3BBADB ;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 1250px;
+    max-height: 150%;
+    padding-bottom:80px ;
+   margin-top: 10px;
+   margin-left: 25px;
+
+}
+.top-section {
+    height: 50px;
+    display: flex; 
+   justify-content: flex-start;
+    margin-top: 40px;
+
+}
+.top-section > div {
+    
+    padding: 5px;
+   width: 100px;
+   
+   
+    
+
+}
+.section1 {  margin-left: 670px;font-family: 'Poppins:wght@300', sans-serif; color: #D1884F; text-align:center;font-size: 14px; display:flex;  } 
+.section2 { text-align:center; font-family: 'Poppins:wght@300', sans-serif; font-size: 14px;display:flex;flex-shrink: 0} 
+.section3 {text-align:center;font-family: 'Poppins:wght@300', sans-serif;font-size: 14px;display:flex;flex-shrink: 0 } 
+.bottom-section {
+    flex: 1; 
+    display: flex;
+    flex-shrink: 0;  
+}
+.left-half, .right-half {
+    flex: 1; 
+   
+    padding: 10px;
+}
+.left-half {
+    margin-left: 65px;
+    
+} 
+.right-half { 
+    margin-left: 65px;
+} 
+
+
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Ensures the border radius is applied to the image */
+    border-bottom-left-radius: 100px; /* Rounded corner at the bottom left */
+    margin-top: 70px;
+}
+
+.image-container img {
+    display: block; /* Removes bottom margin/whitespace inherent to inline elements */
+    width: 265px; /* Ensures the image fills its container */
+    height: 265px; /* Maintains image aspect ratio */
+    border-bottom-left-radius: 100px; /* Rounded corner at the bottom left of the image */
+    border-left: 12px solid #3BBADB; /* Apply a 10px left border directly to the image */
+    object-fit: cover;
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 7%; /* Overlay covering the top 7% of the image */
+    width: 12px; /* Same width as the border, now 10px */
+    background-color: white; /* Assuming the background is white; change as needed */
+}
+
+
+.myParagraph {
+text-align: right;
+margin-right: 0;
+
+margin-top: 70px;
+width: max-content;
+color: #3BBADB;
+font-family: 'Poppins:wght@300', sans-serif;
+font-size:18px;
+line-height: 20px;
+margin-bottom: 40px;
+
+
+}
+.Paragraph2 {
+
+font-family: 'Poppins:wght@800', sans-serif;
+font-size:40px;
+color: #008AAA;
+width:fixed;
+
+text-align: justify;
+font-weight:bold;
+gap:0;
+
+
+
+}
+
+
+
+.Paragraph4
+{
+margin-right: 20px;
+color: white;
+background-color:#008AAA;
+border-style: none;
+border-radius: 5px;
+width:110px;
+height:30px;
+font-size:16px;
+box-shadow: 0px 0px 10px #008AAA;
+
+
+
+
+}
+.Paragraph5
+{
+
+margin-right: 20px;
+color: #008AAA;
+background-color:white;
+border-color: #008AAA;
+border-style: solid ;
+border-width:1px;
+border-radius: 5px;
+width:160px;
+height:30px;
+font-size:16px;
+}
+.button{
+    display:flex;
+    
+    flex-shrink: 0;
+    
+    }
+
+.color{
+color: #D1884F ;
+font-family: 'Poppins:wght@800', sans-serif;
+font-size:40px;
+text-align: right;
+font-weight:bold;
+line-height: 20px;
+
+}
+.content {
+color: black;
+font-family: 'Poppins:wght@400', sans-serif;
+font-size:12px;
+margin-top: 40px;
+}
+
+.hidden {
+display: none;
+}
+
+.toggle {
+display: none;
+}
+
+.toggle:checked + .hidden {
+display: inline;
+
+}
+
+#seeMoreLabel {
+color: blue;
+cursor: pointer;
+}
+
+#seeMoreLabel:hover {
+text-decoration: underline;
+}
+
+.toggle:checked ~ #seeMoreLabel {
+display: none;
+}
+.text{
+text-align: justify;
+margin-top: 40px;
+margin-bottom:50px;
+width: 300px;
+}
+
+@media only screen and (max-width:400px){
+
+    .container{
+        height:90%;
+       width:90%;
+
+    }
+}
+
+
+
